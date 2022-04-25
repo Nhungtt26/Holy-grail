@@ -1,0 +1,134 @@
+body {
+    margin: 0;
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+/* hearder style*/
+body header {
+    background-color: bisque;
+    text-align: center;
+    width: 100%;
+    height: 100px;
+    margin-top: 0;
+    padding-top: 20px;
+}
+header h1 {
+    margin-left:0;
+
+}
+/* for flexbox layout */
+/* <tao 3 cot ko bang nhau float canh nhau*/
+body div {
+    display: flex;
+    flex-direction: row;
+}
+
+/* first block*/
+nav {
+    float: left;
+    background-color: rgb(244, 217, 183);
+    width:25%;
+
+    padding: 20px;
+
+}
+
+/* Định dạng link điều hướng */
+nav a {
+    float: left;
+    display: block;
+    color: green;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    margin-left: 10px;
+    line-height: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 30px;
+    width: 100%;
+  }
+  
+  /* Thay đổi màu liên kết khi di chuột qua */
+nav a:hover {
+    background-color: #db7093;
+    color: white;
+    font-weight: bold
+  }
+
+/* middle block */
+main {
+    background-color: 0;
+    text-decoration: none;
+    width: 50%;
+    margin-left: 30px;
+    margin-right: 10px;
+    margin-top: 0;
+    
+}
+main h2 {
+    text-align: center;
+}
+ 
+/* third block*/
+aside {
+    background-color: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    width: 25%;
+    
+    margin-left: 20%;
+    margin-right: auto;
+}
+aside img {
+    width: 300px;
+}
+
+/* forter*/
+footer {
+    background-color: gray;
+    color: none;
+    width: 100%;
+    padding: 5px;
+    margin-top: 60px;
+    padding-top: 1%;
+    text-align: center;
+}
+
+/* responsive */
+@media screen and (max-width: 1024px) {
+    body div {
+        display: contents;
+
+    }
+    /* first block */
+    nav {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    nav a {
+        display: inline;
+        padding-left: 4%;
+        padding-right: 4%;
+        width: 30%;
+        margin-left: 2%;
+    }
+    div aside {
+        margin-left: 12%;
+        width: 70%;
+    }
+    main {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 0%;
+    }
+    aside {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+
+}

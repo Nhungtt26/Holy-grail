@@ -1,0 +1,48 @@
+body {
+    background-image: linear-gradient(0, #666666, #dddd);
+    font-family: 'Times New Roman', Times, serif;
+}
+body div {
+    background-color: rgb(231, 231, 112);
+    width: 50%;
+    height:500px;
+    margin-left: auto;
+    margin-top: 10%;
+    margin-right: auto;
+    margin-bottom: auto;
+    text-align: center;
+}
+h1 {
+    font-size: 2cm;
+    width: 80%;
+    padding-top: 10%;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+footer {
+    text-align: center;
+   
+}
+/* resposive */
+
+@media screen and (max-width: 1024px){
+    h1 {
+        display: block
+    }
+    body div {
+        background-color: white;
+        width: 80%;
+        margin-left: auto;
+        margin-top: 10%;
+        margin-right: auto;
+        margin-bottom: auto;
+        text-align: center;
+
+    }
+    body div nav a {
+        display: flex;
+        flex-direction: column;
+     
+    }
+}
